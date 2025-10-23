@@ -1,0 +1,7 @@
+<h2 class="text-xl font-semibold">{{ heading() }}</h2>
+
+@for (taskItem of taskItems(); track taskItem.task) {
+    <div class="bg-slate-100 border border-slate-400 p-3 rounded mt-4">
+      {{ taskItem.task }}
+    </div>
+}
